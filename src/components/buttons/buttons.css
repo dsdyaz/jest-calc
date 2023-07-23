@@ -1,8 +1,12 @@
-.buttons {
+.buttons__digits {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5px;
     row-gap: 5px;
+}
+
+.buttons button {
+    background-color: orange;
 }
 
 .digit-button_0 {

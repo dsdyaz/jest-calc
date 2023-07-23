@@ -6,8 +6,10 @@ import DigitArr from "../digit-buttons/digit-arr"
 export default function Buttons(): React.JSX.Element {
     return (
         <div data-testid="buttons-component" className="buttons">
-            {DigitArr()}
-            <button>,</button>
+            <div className="buttons__digits">
+                {DigitArr()}
+                <button>,</button>
+            </div>
         </div>
     )
 }
