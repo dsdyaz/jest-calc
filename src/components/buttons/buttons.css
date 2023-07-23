@@ -1,4 +1,11 @@
 .buttons {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.digit-button_0 {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
