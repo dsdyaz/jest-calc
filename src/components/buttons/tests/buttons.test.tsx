@@ -9,5 +9,5 @@ test("component is in the document", () => {
 
 test("component has button in it", () => {
     render(<Buttons />)
-    expect(screen.getByTestId("buttons-component")).toContainHTML("<button>0</button>")
+    expect(screen.getByTestId("buttons-component")).toContainHTML("<button class='digit-button digit-button_0'>0</button>")
 })
