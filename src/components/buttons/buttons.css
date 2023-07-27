@@ -1,23 +1,23 @@
 .buttons__digits {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 5px;
-    row-gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5px;
+  row-gap: 5px;
 }
 
 .buttons button {
-    background-color: orange;
+  background-color: orange;
 }
 
 .digit-button_0 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .controls {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 5px;
-    row-gap: 5px;
-    padding-bottom: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5px;
+  row-gap: 5px;
+  padding-bottom: 5px;
 }
