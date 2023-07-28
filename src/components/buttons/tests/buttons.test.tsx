@@ -8,6 +8,16 @@ test("component is in the document", () => {
   expect(screen.getByTestId("buttons-component")).toBeInTheDocument()
 })
 
+test("component is visible", () => {
+  render(<Buttons />)
+  expect(screen.getByTestId("buttons-component")).toBeVisible()
+})
+
+test("component is not empty", () => {
+  render(<Buttons />)
+  expect(screen.getByTestId("buttons-component")).not.toBeEmptyDOMElement()
+})
+
 test("component has button in it", () => {
   render(<Buttons />)
   expect(screen.getByTestId("buttons-component")).toContainHTML(
