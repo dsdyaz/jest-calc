@@ -1,0 +1,32 @@
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 5px
+}
+
+.buttons__main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.buttons button {
+  background-color: orange;
+}
+
+button.button-delete {
+  padding: 0.6em 1em;
+}
+
+.operators {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1 1fr;
+  gap: 5px;
+}
+
+.operators button {
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
