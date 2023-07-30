@@ -22,7 +22,7 @@ module.exports = {
     parser: "@typescript-eslint/parser",
     project: ["./tsconfig.json"],
   },
-  plugins: ["react-refresh", "prettier"],
+  plugins: ["react-refresh", "@typescript-eslint", "prettier"],
   rules: {
     "react/jsx-filename-extension": [
       2,
@@ -34,7 +34,7 @@ module.exports = {
     "no-unused-vars": "warn",
     semi: 0,
     "import/extensions": [
-      "error",
+      0,
       "ignorePackages",
       {
         js: "never",
@@ -55,5 +55,12 @@ module.exports = {
         controlComponents: ["CustomInput"],
       },
     ],
+  },
+  settings: {
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+    },
   },
 }
