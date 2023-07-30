@@ -29,7 +29,7 @@ export default function Buttons(props: ButtonsProps): React.JSX.Element {
         <button
           type="button"
           className="button-delete"
-          onClick={deleteFunc ? () => deleteFunc : undefined}
+          onClick={deleteFunc ? () => deleteFunc() : undefined}
         >
           DEL
         </button>
