@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import Screen from "../components/screen/screen"
 import Buttons from "../components/buttons/buttons"
+import "./calculator.css"
 
 export default function Calculator(): React.JSX.Element {
   const [calculation, setCalculation] = useState("")
@@ -33,6 +34,11 @@ export default function Calculator(): React.JSX.Element {
 
     return null
   }
+
+  function evaluate() {
+    setCalculation(result)
+  }
+
   return (
     <div className="calculator" data-testid="calculator">
       <Screen
@@ -40,6 +46,9 @@ export default function Calculator(): React.JSX.Element {
         calculation={calculation || ""}
       />
       <Buttons onClickFunc={updateCalculator} />
+      <button className="eval-button" type="button" onClick={evaluate}>
+        =
+      </button>
     </div>
   )
 }
