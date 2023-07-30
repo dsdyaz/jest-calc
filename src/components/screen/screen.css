@@ -1,0 +1,13 @@
+.screen {
+    background-color: black;
+    color: whitesmoke;
+    padding: 15px;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pre-result {
+    color: rgb(168, 168, 168);
+    font-size: 12px;
+}
