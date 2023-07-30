@@ -39,13 +39,36 @@ export default function Calculator(): React.JSX.Element {
     setCalculation(result)
   }
 
+  const deleteLast = () => {
+    if (calculation !== "") {
+      const value = calculation.slice(0, -1)
+      setCalculation(value)
+      if (value === "") {
+        setResult("")
+      } else if (operators.includes(value.slice(-1))) {
+        setCalculation(value.slice(0, -1))
+        setResult(
+          calculate(value.slice(0, -1)) % 1 === 0
+            ? calculate(value.slice(0, -1)).toString()
+            : calculate(value.slice(0, -1)).toPrecision(3).toString(),
+        )
+      } else {
+        setResult(
+          calculate(value) % 1 === 0
+            ? calculate(value).toString()
+            : calculate(value).toPrecision(3).toString(),
+        )
+      }
+    }
+  }
+
   return (
     <div className="calculator" data-testid="calculator">
       <Screen
         preResult={result ? `(${result}) ` : ""}
         calculation={calculation || ""}
       />
-      <Buttons onClickFunc={updateCalculator} />
+      <Buttons onClickFunc={updateCalculator} deleteFunc={deleteLast} />
       <button className="eval-button" type="button" onClick={evaluate}>
         =
       </button>
