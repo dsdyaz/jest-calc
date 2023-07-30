@@ -10,7 +10,6 @@ module.exports = {
     "airbnb",
     "airbnb/hooks",
     "prettier",
-    "plugin:jsx-a11y/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -23,7 +22,7 @@ module.exports = {
     parser: "@typescript-eslint/parser",
     project: ["./tsconfig.json"],
   },
-  plugins: ["react-refresh", "@typescript-eslint", "jsx/a11y", "prettier"],
+  plugins: ["react-refresh", "@typescript-eslint", "prettier"],
   rules: {
     "react/jsx-filename-extension": [
       2,

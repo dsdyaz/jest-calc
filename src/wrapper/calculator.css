@@ -1,0 +1,11 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.eval-button {
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    color: whitesmoke;
+}
