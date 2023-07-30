@@ -22,7 +22,7 @@ export default function Buttons(props: ButtonsProps): React.JSX.Element {
         {DigitArr(onClickFunc)}
         <button
           type="button"
-          onClick={onClickFunc ? () => onClickFunc(",") : undefined}
+          onClick={onClickFunc ? () => onClickFunc(".") : undefined}
         >
           ,
         </button>
