@@ -20,10 +20,14 @@ test("component is not empty", () => {
 
 test("component contains calculation string and preResult", () => {
   render(<Screen />)
-  expect(screen.getByTestId("screen")).toContainHTML("<span>(0)</span> 0")
+  expect(screen.getByTestId("screen")).toContainHTML(
+    "<span class='pre-result'>(0)</span> 0",
+  )
 })
 
 test("component receives and displays data from props", () => {
   render(<Screen preResult="(5)" calculation="2+3" />)
-  expect(screen.getByTestId("screen")).toContainHTML("<span>(5)</span> 2+3")
+  expect(screen.getByTestId("screen")).toContainHTML(
+    "<span class='pre-result'>(5)</span> 2+3",
+  )
 })
