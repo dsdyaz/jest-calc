@@ -17,3 +17,13 @@ test("component is not empty", () => {
   render(<Screen />)
   expect(screen.getByTestId("screen")).not.toBeEmptyDOMElement()
 })
+
+test("component contains calculation string and preResult", () => {
+  render(<Screen />)
+  expect(screen.getByTestId("screen")).toContainHTML("<span>(0)</span> 0")
+})
+
+test("component receives and displays data from props", () => {
+  render(<Screen preResult="(5)" calculation="2+3" />)
+  expect(screen.getByTestId("screen")).toContainHTML("<span>(5)</span> 2+3")
+})
