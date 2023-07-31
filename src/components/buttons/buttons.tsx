@@ -12,7 +12,12 @@ const defaultProps = {
   onClickFunc: null,
   deleteFunc: null,
 }
-
+/**
+ * Buttons component, renders digits buttons and operators buttons
+ * @param {() => void} onClickFunc - function that will be executed onclick
+ * @param {() => void} deleteFunc - special function for delete button
+ * @returns {React.JSX.Element} buttons with passed function
+ */
 export default function Buttons(props: ButtonsProps): React.JSX.Element {
   const { onClickFunc, deleteFunc } = props
 
