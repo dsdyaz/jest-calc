@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignores
 import React from "react"
 import { test, expect, describe } from "@jest/globals"
 import { render, screen } from "@testing-library/react"
