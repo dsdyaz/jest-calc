@@ -11,6 +11,12 @@ const defaultProps = {
   calculation: "0",
 }
 
+/**
+ * Calculator screen component
+ * @param {string} preResult displays calculation result before evaluation has been made
+ * @param {string} calculation displays entered calculation
+ * @returns {React.JSX.Element} div with provided data
+ */
 export default function Screen(props: ScreenProps): React.JSX.Element {
   const { preResult, calculation } = props
   return (

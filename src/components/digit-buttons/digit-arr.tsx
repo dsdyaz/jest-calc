@@ -6,6 +6,11 @@ const defaultProps = {
   onClickFunc: null,
 }
 
+/**
+ * Digit buttons array
+ * @param props function that will be executed onClick
+ * @returns {React.JSX.Element[]} array of the digit-containing buttons with provided onclick func
+ */
 export default function DigitArr(props: DigitArrProps): React.JSX.Element[] {
   const onClickFunc = props
 

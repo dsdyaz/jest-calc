@@ -3,6 +3,10 @@ import Screen from "../components/screen/screen"
 import Buttons from "../components/buttons/buttons"
 import "./calculator.css"
 
+/**
+ * Calculator component, contains calculation logic, passes data and functions to inner components
+ * @returns {React.JSX.Element} Working calculator
+ */
 export default function Calculator(): React.JSX.Element {
   const [calculation, setCalculation] = useState("")
   const [result, setResult] = useState("")

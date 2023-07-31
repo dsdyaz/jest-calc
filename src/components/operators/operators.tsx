@@ -7,7 +7,11 @@ type OperatorsProps = {
 const defaultProps = {
   onClickFunc: null,
 }
-
+/**
+ * Math operators containing buttons component
+ * @param { () => void } onClickFunc function that will be executed onclick
+ * @returns four buttons with math operators and provided onclick func
+ */
 export default function Operators(props: OperatorsProps): React.JSX.Element {
   const { onClickFunc } = props
 
