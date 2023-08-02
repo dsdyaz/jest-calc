@@ -13,6 +13,7 @@
 
 .buttons button {
   background-color: orange;
+  color: black;
 }
 
 button.button-delete {
